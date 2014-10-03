@@ -1,0 +1,79 @@
+ body {
+    background: url(canvas.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ a {
+     text-decoration: none;
+ }
+
+ h1 a {
+     color: white;
+ }
+
+nav a {
+    float: right;
+    font-size: .85em;
+    color: white;
+    margin: 10px 8px;
+    display: inline-block;
+    text-align: right;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: right;
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+#wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#home_gallery li {
+    list-style: none;
+    max-width: 30%;
+    float: left;
+    margin: 0 .25%;
+    padding: 0;
+
+}
+
+#home_gallery img {
+    max-height: 473px;
+    width: auto;
+    clear: both;
+}
+
+li:nth-child(3n) {
+    border-right: none;
+}
+
+li:nth-child(4n+1) {
+    border-left: none;
+}
+
+#home_gallery li {
+    border: 1px #fff;
+}
+
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: white;
+
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
