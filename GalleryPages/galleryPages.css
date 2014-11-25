@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'PassionSansPDae-Book';
+    src: url('/passionsanspdae-book.eot');
+    src: url('/passionsanspdae-book.eot?#iefix') format('embedded-opentype'),
+    url('/passionsanspdae-book.woff') format('woff'),
+    url('/passionsanspdae-book.ttf') format('truetype'),
+    url('/passionsanspdae-book.svg#PassionSansPDae-Book') format('svg');
+}
+
+@font-face {
+    font-family: 'PassionSansPDaa-Hairline';
+    src: url('/passionsanspdaa-hairline.eot');
+    src: url('/passionsanspdaa-hairline.eot?#iefix') format('embedded-opentype'),
+    url('/passionsanspdaa-hairline.woff') format('woff'),
+    url('/passionsanspdaa-hairline.ttf') format('truetype'),
+    url('/passionsanspdaa-hairline.svg#PassionSansPDaa-Hairline') format('svg');
+}
+
+body {
+    background: snow;
+}
+
+#cube29 {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+/*navigation panel*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a.current,
+a:hover {
+    color: lightsteelblue;
+}
+
+#gallery_header  {
+    margin: 50px 0 50px 0;
+}
+
+nav {
+    text-align: center;
+    margin-left: -40px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 20px 5px 20px;
+    border-bottom: 2px solid black;
+
+}
+
+.social_media {
+    float: right;
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    right: 30px;
+    padding: 10px;
+}
+
+
+/*Gallery*/
+#wrapper {
+    background: snow;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+    border-radius:10px;
+    margin: 0;
+}
+
+.page_gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:  space-between;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+    list-style: none;
+}
+
+.page_gallery li img {
+    height: /*30.289137%*/ 225px;
+    border-radius: 5%;
+    box-shadow:0 0 20px 0  rgba(255, 255, 255, .85);
+    border: 4px solid white;
+    opacity: 0.82;
+    margin: 10px 25px;
+    padding: 0;
+    position: relative;
+    z-index: 100;
+}
+
+.page_gallery img:hover {
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.75);
+    transition: all .6s ease;
+    transform: scale(2.2);
+    opacity: 1.0;
+    z-index: 2000;
+}
+
+.page_gallery li:first-child:hover {
+    transform: translateX(120px);
+    transition: all .6s  ease;
+    z-index: 2000;
+}
+
+.page_gallery li:last-child:hover {
+    transform: translateX(-80px);
+    transition: all .6s  ease;
+    z-index: 2000;
+}
+
+.row-2 li:first-child:hover {
+    transform: translateX(150px) translateY(-50px);
+    z-index: 2000;
+}
+
+.page_gallery.row-2 img:hover {
+    transform: translateY(-100px) scale(2.2);
+    z-index: 2000;
+    transition: all .6s ease;
+
+}
+
+.page_gallery.row-1 {
+    width: 95%;
+    padding-top: 10px;
+}
+
+.row-2,
+.row-3 {
+    justify-content: space-between;
+    width: 95%;
+}
+
+
+/*overlay for photo viewing*/
+#overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2001;
+    padding: 5px;
+    text-align: center;
+}
+
+#overlay img{
+    border-radius: 10px;
+    max-height: 90%;
+}
+
+.caption  {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: .7em;
+    line-height: 1.5em;
+    color:  lightcyan;
+}
+
+.photo_caption  {
+    display: none;
+}
+
+/*Text*/
+h2 {
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+#tagLine {
+    font-family: 'PassionSansPDaa-Hairline', sans-serif;
+    display: inline;
+    font-weight: normal;
+    font-style: normal;
+    font-size:  2em;
+    line-height: 64px;
+    margin: 0 -72px 5px 20px;
+    position: relative;
+    text-align: right;
+    float: right;
+}
+
+
+#introduction{
+    float: left;
+    margin: 20px 0 0 20px;
+    padding: 0;
+    width: 250px;
+    font-family: 'Arvo', serif;
+    font-size: .85em;
+    line-height: 2em;
+    text-align: center;
+}

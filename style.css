@@ -19,21 +19,21 @@
  }
 
  body {
-    background: snow;
-     width: 100%;
-     height: 100%;
+     background: snow;
+     width: 100vw;
+     height: 100vh;
 }
 
  a {
      text-decoration: none;
- }
-
- h1 a {
      color: black;
  }
 
-.header {
-    background-color: #f3f3f3;
+ a:hover {
+     color: steelblue;
+ }
+
+ .header {
     width:  950px;
     height:  160px;
     margin-left: 5px;
@@ -61,11 +61,12 @@ header  {
 
 nav {
     float: left;
+    color: black;
 }
 
 nav a {
     color: black;
-    margin: 20px 20px 5px 10px;
+    margin: 20px 20px 15px 10px;
     display: block;
 }
 
@@ -74,12 +75,12 @@ nav ul {
     padding: 40px;
 }
 
-a.current {
-    color: #F5F5F5
+nav a.current {
+    color:  lightsteelblue;
 }
 
-a:hover {
-    color: #F5F5F5
+nav a:hover {
+    color: lightsteelblue;
 }
 
 ul, h2 {
@@ -92,14 +93,12 @@ ul, h2 {
 
 #wrapper {
     background: url(bcard.jpg) no-repeat;
-    background-size:  cover;
-    width: 1333px;
-    height: 766px;
+    background-size: cover;
+    width:  80%;
+    height: 88.2488%;
     border-radius:10px;
-    margin: -140px auto;
-    box-sizing: border-box;
+    margin:  -8.29% auto 0;
     float: right;
-
 }
 
 #homePage_slideshow {
@@ -115,6 +114,7 @@ ul, h2 {
 
 #homePage_slideshow>img {
     border-radius: 10px;
+    width: 100%;
 }
 
 .home_gallery {
@@ -242,9 +242,9 @@ h2 {
 }
 
 
-#description{
+#introduction {
     float: left;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 30px;
     padding: 0;
     width: 250px;
     font-family: 'Arvo', serif;
