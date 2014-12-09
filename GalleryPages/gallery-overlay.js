@@ -8,13 +8,16 @@ $(document).ready(function(){
         singleItem:true
     });*/
     var $overlay = $('<div id= "overlay"></div>');
-
     var $image = $('<img>');
     var $caption = $('<p class="caption"></p>');
+    var $specs = $('<p class="item_specs"></p>');
+    var $price = $('<p class="item_price"></p>');
 
 //add image to overlay
     $overlay.append($image);
     $overlay.append($caption);
+    $overlay.append($specs);
+    $overlay.append($price);
 
 //add overlay to page
     $("body").append($overlay);
@@ -33,6 +36,10 @@ $(document).ready(function(){
 
         var captionText= $(this).children("p.photo_caption").text();
         $caption.text(captionText);
+        var specTag = $(this).children("p.specs").text();
+        $specs.text(specTag);
+        var priceTag =$(this).children( "p.price").text();
+        $price.text(priceTag);
 
     });
 
