@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'PassionSansPDae-Book';
-    src: url('/passionsanspdae-book.eot');
-    src: url('/passionsanspdae-book.eot?#iefix') format('embedded-opentype'),
-    url('/passionsanspdae-book.woff') format('woff'),
-    url('/passionsanspdae-book.ttf') format('truetype'),
-    url('/passionsanspdae-book.svg#PassionSansPDae-Book') format('svg');
+    src: url('/webFonts/passionsanspdae-book.eot');
+    src: url('/webFonts/passionsanspdae-book.eot?#iefix') format('embedded-opentype'),
+    url('/webFonts/passionsanspdae-book.woff') format('woff'),
+    url('/webFonts/passionsanspdae-book.ttf') format('truetype'),
+    url('/webFonts/passionsanspdae-book.svg#PassionSansPDae-Book') format('svg');
 }
 
 @font-face {
     font-family: 'PassionSansPDaa-Hairline';
-    src: url('/passionsanspdaa-hairline.eot');
-    src: url('/passionsanspdaa-hairline.eot?#iefix') format('embedded-opentype'),
-    url('/passionsanspdaa-hairline.woff') format('woff'),
-    url('/passionsanspdaa-hairline.ttf') format('truetype'),
-    url('/passionsanspdaa-hairline.svg#PassionSansPDaa-Hairline') format('svg');
+    src: url('/webFonts/passionsanspdaa-hairline.eot');
+    src: url('/webFonts/passionsanspdaa-hairline.eot?#iefix') format('embedded-opentype'),
+    url('/webFonts/passionsanspdaa-hairline.woff') format('woff'),
+    url('/webFonts/passionsanspdaa-hairline.ttf') format('truetype'),
+    url('/webFonts/passionsanspdaa-hairline.svg#PassionSansPDaa-Hairline') format('svg');
 }
 
 /*Text*/

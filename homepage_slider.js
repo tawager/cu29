@@ -6,11 +6,6 @@ $(document).ready (function (){
 
     $(function() {
         $('.banner').unslider();
-        var slideshow = $('banner').unslider();
-         var slide = $('img.slide');
-            var  next_slide = slideshow.children(slide);
-
-         next_slide.next();
 
     });
 
@@ -21,6 +16,10 @@ $(document).ready (function (){
         dots: true,               //  Display dot navigation
         fluid: false               //  Support responsive design. May break non-responsive designs
     });
+    var slideshow = $('banner').unslider();
+    var slide = slideshow.children('img.slide');
+
+    slide.next();
 
 
 });
