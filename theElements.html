@@ -3,16 +3,30 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Cu29 | Elements</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="about_pages.css">
+    <link rel="stylesheet" type="text/css" href="CSS/about_pages.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="JS/about-pages.js"></script>
 </head>
 <body>
 <header id="about_header">
+    <div class="social-media">
+        <a class="social_media" href="http://www.pinterest.com/cu29creations/" target="_blank">
+            <img src="http://www.niftybuttons.com/authentic/color-square/pinterest.png" border="0" margin="1px"  align="left">
+        </a>
+        <a class="social_media" href="http://instagram.com/cu29creations" target="_blank">
+            <img src="http://www.niftybuttons.com/authentic/color-square/instagram.png" border="0" margin="1px" align="left">
+        </a>
+        <a class="social_media" href="https://www.facebook.com/Cu29Creations" target="_blank">
+            <img src="http://www.niftybuttons.com/authentic/color-square/facebook.png" align="left" border="0" margin="1px">
+        </a>
+    </div>
     <a href="index.html">
-        <img src="img/header.png" class="header">
+        <img src="images/header.png" id="header">
     </a>
-    <nav>
+    <nav class="desktop_navigation">
         <ul>
             <li>
                 <h2><a href="GalleryPages/necklaces.html">necklaces</a></h2>
@@ -31,18 +45,578 @@
             </li>
         </ul>
     </nav>
-    <a class="social_media" href="http://www.pinterest.com/cu29creations/" target="_blank">
-        <img src="http://www.niftybuttons.com/authentic/color-square/pinterest.png" border="0" margin="1px"  align="left">
-    </a>
-    <a class="social_media" href="http://instagram.com/cu29creations" target="_blank">
-        <img src="http://www.niftybuttons.com/authentic/color-square/instagram.png" border="0" margin="1px" align="left">
-    </a>
-    <a class="social_media" href="https://www.facebook.com/Cu29Creations" target="_blank">
-        <img src="http://www.niftybuttons.com/authentic/color-square/facebook.png" align="left" border="0" margin="1px">
-    </a>
 </header>
 <div id="logo">
-    <h1>Elements from Nature</h1>
+    <h1 class="elements">Elements by Nature.</h1><h3 class="designs"><a href="theArtist.html"> Designs by Stephanie Wager.</a></h3>
+</div>
+<div class="wrapper">
+<div class="copper-info">
+    <ul class="intro-to-copper">
+        <li class="list-title">
+            <h1 class="informational-heading">Copper</h1>
+        </li>
+        <li class="fact">Chemical Symbol: Cu</li>
+        <li class="fact">Atomic Number: 29</li>
+        <li class="fact">Copper has been used by humans for at least 10,000 years and was incredibly important to the Roman Empire and other ancient civilizations for many reasons including uses in tool construction, currency, art, and much more. </li>
+        <li class="fact"> The main sources of Roman Copper were mines on the island of Cyprus. Thus, the metal was given the name <span>Cyprium</span>, which was later shortened in Latin to <span>Cuprum</span>.</li>
+        <li class="fact">Unlike rust, which weakens iron or steel, Copper does not react to moisture, but, when exposed to <span>oxygen</span>, the formation of a layer of greenish copper carbonate (or verdigris) that builds up actually <span>protects</span> the underlying metal from further corrosion.</li>
+        <li class="fact">Copper is bacteriostatic and also resistant to fungi. Since bacteria can't grow on it, Copper has found uses in everything from lining parts of ship's hulls for protection against barnacles, to germ-free subway station handrails in Santiago, Chile,
+                        and even to important implementations in many hospitals worldwide where Copper items like doorknobs, sinks and faucets, bed hardware, trays, computer keyboards, and more are helping to reduce the spread of potentially harmful bacteria and germs.</li>
+        <li class="fact">100% recyclable without loss of quality.</li>
+        <li class="fact">It is found in the bodies of all living organisms, and it is a dietary mineral used to facilitate respiration, but is also found in the liver, muscles, and bones. (The body of a 130 pound person contains about 1g of copper, or about 8 mg per 10 pounds.)</li>
+    </ul>
+</div>
+<div class="copper-images">
+    <ul>
+        <li class="informational-image">
+            <a href="about-images/Copper/natCopper.jpg">
+                <img src="about-images/Copper/natCopper.jpg">
+                <p class="informational-image-caption">Copper in its natural state.<br> Like gold, an unworked piece like this would be referred to as a "nugget".
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/Copper/Egyptian-copper-tools.jpg">
+                <img src="about-images/Copper/Egyptian-copper-tools.jpg">
+                <p class="informational-image-caption">Ancient Egyptians used many Copper tools, and because it's bacteria resistant, it was also very important for surgical instruments.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/Copper/CarthageElectrumCoin250BCE.jpg">
+                <img src="about-images/Copper/CarthageElectrumCoin250BCE.jpg">
+                <p class="informational-image-caption">Copper currency from the ancient Roman city of Carthage. Circa 250 B.C.E.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/Copper/coppersheet.jpg">
+                <img src="about-images/Copper/coppersheet.jpg" alt="colorful weathered patina on a copper sheet">
+                <p class="informational-image-caption">Flames of various temp., metalsmith water-quenching, and various chemical reactions can all create incredible patinas.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/Copper/Minneapolis_City_Hall.jpg">
+                <img src="about-images/Copper/Minneapolis_City_Hall.jpg">
+                <p class="informational-image-caption"> The beautiful Minneapolis, Minnesota City Hall is a great example of Copper's popularity in architecture.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/Copper/kansas-capital.jpg">
+                <img src="about-images/Copper/kansas-capital.jpg">
+                <p class="informational-image-caption">The recently installed Copper dome on the Kansas State capitol building in Topeka will, over time, transform much the same way as the roof of Minneapolis City Hall and the Statue of Liberty have.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/Copper/patina.jpg">
+                <img src="about-images/Copper/patina.jpg">
+                <p class="informational-image-caption">A close-up of the greenish-blue verdigris patina of a Copper roof.
+                </p>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="mineral-info">
+    <ul class="intro-to-minerals">
+        <li class="list-title">
+            <h1 class="informational-heading">Stones & Minerals</h1>
+        </li>
+        <li class="fact">agate
+            <p class="mineral-info">
+                A type of fine-grained, colorful, usually-hollow chalcedony that has been a common material for carving since the Bronze Age, possibly even earlier. <br> <br>
+                Agate was given its name by a Greek philosopher who would commonly find the stone along the shore of the river Achates. <br> <br>
+                At the Düsseldorf Exhibition of 1902 (much like the World Fair), an agate of 35 tons was on display.
+            </p>
+        </li>
+        <li class="fact">amethyst
+            <p class="mineral-info">
+                A purple variety of quartz that owes its violet color to irradiation during formation.<br><br>
+                Amethyst’s color can vary from a light pinkish violet to a deep purple.<br><br>
+                The ancient Greeks wore amethyst and made drinking vessels decorated with it in the belief that it would prevent intoxication.
+            </p>
+        </li>
+        <li class="fact">apatite
+            <p class="mineral-info">
+                A mineral used very infrequently as a gemstone despite its beauty.<br><br>
+                Its primary use is actually in fertilizer as a source of phosphate, and it’s a large part of the human body’s tooth enamel and bone.<br><br>
+                Apatite comes in colors ranging from transparent to translucent, usually green, but sometimes they can be colorless, yellow, blue, violet, pink, or brown.
+            </p>
+        </li>
+        <li class="fact">azurite
+            <p class="mineral-info">
+
+            </p>
+        </li>
+        <li class="fact">beryl
+            <p class="mineral-info">
+                A mineral composed of the element Beryllium.<br><br>
+                Pure beryl is colorless, but its frequent tint is caused by impurities. <br><br>
+                Possible colors are green, blue, yellow, red, and white.<br><br>
+                Emerald, Aquamarine, and Morganite are all varieties of Beryl.
+            </p>
+        </li>
+        <li class="fact">
+                birthstones->
+            <div class="informational-subsection">
+                 <table>
+                     <thead>
+                     <tr>
+                         <td>Month</td>
+                         <td>Birthstone(s) <br><span id="joa">Jewelers of America ~ 2013</span></td>
+                         <td>Tiffany & Co. Pamphlet<br><span>~ Circa 1870</span></td>
+                     </tr>
+                     </thead>
+                     <tbody>
+                     <tr>
+                         <td>January</td>
+                         <td>Garnet</td>
+                         <td>
+                             <p>
+                                 By her who in this month (January) is born<br>
+                                 No gem save garnets should be worn;<br>
+                                 They will ensure her constancy,<br>
+                                 True friendship, and fidelity.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>February</td>
+                         <td>Amethyst</td>
+                         <td>
+                             <p>
+                                 The February-born shall find<br>
+                                 Sincerity and peace of mind,<br>
+                                 Freedom from passion and from care,<br>
+                                 If they an amethyst will wear.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>March</td>
+                         <td>Aquamarine, Bloodstone</td>
+                         <td>
+                             <p>
+                                 Who in this world of ours their eyes<br>
+                                 In March first open shall be wise,<br>
+                                 In days of peril firm and brave,<br>
+                                 And wear a bloodstone to their grave.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>April</td>
+                         <td>Diamond</td>
+                         <td>
+                             <p>
+                                 She who from April dates her years,<br>
+                                 Diamonds shall wear, lest bitter tears<br>
+                                 For vain repentance flow; this stone,<br>
+                                 Emblem of innocence, is known.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>May</td>
+                         <td>Emerald</td>
+                         <td>
+                             <p>
+                                 Who first beholds the light of day<br>
+                                 In spring's sweet flowery month of May<br>
+                                 And wears an emerald all her life<br>
+                                 Shall be a loved and happy wife.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>June</td>
+                         <td>Pearl, Moonstone</td>
+                         <td>
+                             <p>
+                                 Who comes with summer to this earth,<br>
+                                 And owes to June her hour of birth,<br>
+                                 With ring of agate on her hand<br>
+                                 Can health, wealth, and long life command.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>July</td>
+                         <td>Ruby</td>
+                         <td>
+                             <p>
+                                 The glowing ruby shall adorn,<br>
+                                 Those who in July are born;<br>
+                                 Then they'll be exempt and free<br>
+                                 From love's doubts and anxiety.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>August</td>
+                         <td>Peridot</td>
+                         <td>
+                             <p>
+                                 Wear a sardonyx or for thee,<br>
+                                 No conjugal felicity;<br>
+                                 The August-born without this stone,<br>
+                                 `Tis said, must live unloved and lone.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>September</td>
+                         <td>Sapphire</td>
+                         <td>
+                             <p>
+                                 A maiden born when September leaves<br>
+                                 Are rustling in September's breeze,<br>
+                                 A sapphire on her brow should bind<br>
+                                 `Twill cure diseases of the mind.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>October</td>
+                         <td>Opal, Tourmaline</td>
+                         <td>
+                             <p>
+                                 October's child is born for woe,<br>
+                                 And life's vicissitudes must know,<br>
+                                 But lay an opal on her breast,<br>
+                                 And hope will lull those woes to rest.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>November</td>
+                         <td>Topaz, Citrine</td>
+                         <td>
+                             <p>
+                                 Who first comes to this world below<br>
+                                 With drear November's fog and snow,<br>
+                                 Should prize the topaz's amber hue,<br>
+                                 Emblem of friends and lovers true.
+                             </p>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>December</td>
+                         <td>Turquoise, Zircon, Tanzanite</td>
+                         <td>
+                             <p>
+                                 If cold December gave you birth,<br>
+                                 The month of snow and ice and mirth,<br>
+                                 Place on your hand a turquoise blue;<br>
+                                 Success will bless whate'er you do.
+                             </p>
+                         </td>
+                     </tr>
+                     </tbody>
+                 </table>
+            </div>
+        </li>
+        <li class="fact">carnelian
+            <p class="mineral-info">
+                Sometimes called “Sard”, Carnelian is a semi-precious stone from the Chalcedony family, like Agate, Jasper, and Onyx.  <br><br>
+                It receives its color from iron oxide (rust) and so usually appear dark red or brown but can vary greatly in shades ranging from pale orange to an intense almost-black.
+            </p>
+        </li>
+        <li class="fact">citrine
+            <p class="mineral-info">
+
+            </p>
+        </li>
+        <li class="fact">coral
+            <p class="mineral-info">
+                Coral has  been used in jewelry and decorations for around 10,000 years. <br><br>
+                They are usually divided into two families, “calcareous” (or stony) and “proteinaceous” (or horn-like). <br><br>
+                Blue sponge coral fall into the “calcareous” family, and are much more porous than most pink or red coral,
+                which are becoming increasingly scarce due to over-harvesting, though WHITE and light pink corals were preferred in the 18th and 19th centuries.
+            </p>
+        </li>
+        <li class="fact">fluorite
+            <p class="mineral-info">
+                This colorful mineral is valuable and important for an incredible variety of reasons besides as a gemstone. It is used in smelting,
+                the manufacturing of hydrofluoric acid, opalescent glass and enamels, and to produce low dispersion optics and high-grade lenses in microscopes and telescopes (since it absorbs very little ultraviolet light compared to standard glass). <br><br>
+                In mining and smelting, it's referred to as Fluorspar, where it is used to thicken slag in iron production, lower the melting point of raw materials in steel production, and many other reasons. <br><br>
+                Because of its special properties, it was used to name the phenomenon of fluorescence, which is when an object or substance becomes luminescent after absorbing light, UV rays, or other electromagnetic radiation (like with glow-in-the-dark stickers).
+            </p>
+        </li>
+        <li class="fact">jade
+            <p class="mineral-info">This term is actually applied to two separate ornamental rocks of similar color, Nephrite and Jadeite, both of which are composed chiefly of silica.  <br> <br>
+                Jade has been used for carving material since prehistoric times in both Central America and  especially in Asia, where it had a status value higher than silver and even gold,
+                and where it can still fetch $3000 per ounce. <br> <br>
+                It was believed that opium pipes with mouthpieces of Jade would bestow longevity upon their users. </p>
+        </li>
+        <li class="fact">jasper
+            <p class="mineral-info">
+                Unlike Jade, Jasper is a variety of silica with HIGH levels of impurity, and which is usually a rough combination of chalcedony and/or microquartz.
+                This varied composition is how it received its name, which means "speckled or spotted stone".<br><br>
+                It is opaque, usually red, green, yellow, or brown, and breaks down to a very smooth surface which makes it very popular as a gemstone or other decoration.
+            </p>
+        </li>
+        <li class="fact">kyanite
+            <p class="mineral-info">
+                Also known as disthene, rhaeticite, or cyanite, this mineral, which can sometimes display a cat’s eye effect, is usually found where aluminum is in high concentration.<br> <br>
+                It is usually a translucent shade of blue, and appears extremely fibrous and splintery to the naked eye, although it does occur rarely in other colors as well, including recently discovered orange kyanite in Tanzania. <br> <br>
+                It is very stable at high temperatures and is sometimes used to help construct materials useful in the production of porcelain and porcelain-type dishware.
+            </p>
+        </li>
+        <li class="fact">labradorite
+            <p class="mineral-info">
+                This mineral is so-named because it was discovered in Labrador, Canada by Moravian missionaries in 1770, although it has also been reported in Scandinavia and Madagascar. <br> <br>
+                Like fluorite and “fluorescence”, labradorite gets to lend its name to an iridescent optical effect as well, called “Labradorescence”.<br> <br>
+                Predominantly blue, but also occurring in gray-green, black, or grayish-white, these stones display flashes of peacock blue, gold, pale green, or coppery red.<br> <br>
+                It became a popular gem in Europe in the 18th and 19th centuries, and it has recently become a choice material for VERY high-end countertop stone.
+            </p>
+        </li>
+        <li class="fact">moonstone
+            <p class="mineral-info">
+
+            </p>
+        </li>
+        <li class="fact">obsidian (rainbow)
+            <p class="mineral-info">
+                Not a true mineral, obsidian is actually categorized as volcanic glass. It occurs in areas where lava flows were quickly cooled.<br> <br>
+                Obsidian is hard and brittle, and it fractures with very sharp edges like flint, which could be then be used in the making of cutting and piercing tools by ancient peoples,
+                and has even been used (only currently approved for use on animals) as surgical scalpel blades, since it can be worked to a blade-width of only 3nm; MANY times sharper than any metal blade.<br> <br>
+                It presents a different appearance depending on how it is cut. In one direction it is jet black, while in the other direction it is glistening gray.
+            </p>
+        </li>
+        <li class="fact">petrified wood
+            <p class="mineral-info">
+                When a tree becomes buried in sediment or water and deprived of the oxygen necessary for it to decompose, it can go through a process called “permineralization”.
+                This occurs when mineral-rich water flows through the plant cells and, over time, replaces all the organic materials with those minerals. <br><br>
+                different minerals give petrified wood unique colors and properties. For example, green or blue petrified wood is usually high in cobalt, chromium, or copper.
+                Petrified wood specimens in red, brown, or yellow have usually been colored by iron oxide, and pink/orange specimens were tinted by manganese.
+            </p>
+        </li>
+        <li class="fact">pietersite
+            <p class="mineral-info">
+                In the world of minerals, pietersite is an infant, only being discovered in 1962 by Sid Pieters in an area of farmland in Namibia, Africa. <br> <br>
+                It commonly exhibits the “Tiger's eye” optical effect, but with very unique properties and colors; Blue being the rarest color, followed by red. <br> <br>
+                It’s only other known location is in China where it was discovered in 1993.
+            </p>
+        </li>
+        <li class="fact">pyrite
+            <p class="mineral-info">
+                Often called by its more official name, iron pyrite, or by its colloquial name, "fool's gold", this mineral has been used by people for centuries to produce fire-starting or firearm-igniting sparks by striking it against certain materials, like steel.<br><br>
+                Like only a few of the other minerals on this list, pyrite is completely opaque with a reflective, brass-yellow surface.<br> <br>
+                It’s most common structure is perfectly cubic, and it seems to grow out of the surrounding rock, but sometimes pyrite can replace the minerals in the bones of decomposing organisms and take on their shapes as a fossil.
+            </p>
+        </li>
+        <li class="fact">onyx (sardonyx)
+            <p class="mineral-info">
+                Like Agate, Onyx is a type of banded Chalcedony that occurs in many colors. Unlike agate, it is almost never blue or purple, and its bands run in parallel lines,
+                not necessarily in the chaotically curved rings of most types of agate. <br><br>
+                Even though ”Onyx”is sometimes even used to name shades of this color, black is not a very common color for natural onyx (especially stones that are ALL black without colored bands)
+                Subsequently, most black onyx specimens on the market have been artificially colored.<br><br>
+                *Sardonyx (in which the bands are composed of Sard, the relative of Carnelian mentioned above) is most commonly brownish-red to light-orange in color.
+            </p>
+        </li>
+        <li class="fact">smoky quartz
+            <p class="mineral-info">
+                Smoky quartz is identical in composition to other quartz crystals, except for a slight irradiation of its silicon dioxide structure which can result in colors from practically transparent clear to an almost opaque dark brown/black.<br> <br>
+                It can take several unique regional forms, each with a specific name: <br>
+                Morion is a European variety that appears very dark brown to black and may be opaque.<br>
+                Cairngorm is a variety from Scotland that usually appears yellowish-brown or grayish-brown.<br> <br>
+                Thin slices of smoky quartz were used in the 1100s by the Chinese as a form of early sunglasses.
+            </p>
+        </li>
+        <li class="fact">turquoise
+            <p class="mineral-info">
+                Because of its color's similarity to the verdigris patina of copper, it’s easy to guess that this mineral IS actually a form of copper and aluminum phosphate. <br> <br>
+                It has been prized by humans for thousands of years, but recently it’s market has been affected by the overwhelming occurrence of synthetic and dye-treated specimens.<br> <br>
+                Turquoise is very porous and can be semitranslucent in thin sections. Although turquoise usually occurs in its traditional color, it can also range from white to yellowish-green.<br> <br>
+                It is one of the first gems to be mined, with some evidence pointing to uses almost 70,000 years ago.
+            </p>
+        </li>
+    </ul>
+</div>
+<div class="mineral-images">
+    <ul>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/agate2.jpg">
+                <img src="about-images/stones-and-minerals/agate2.jpg">
+                <p class="informational-image-caption">
+                    A beautiful agate slice that demonstrates this mineral's amazing color patterns.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/amethyst.jpg">
+                <img src="about-images/stones-and-minerals/amethyst.jpg">
+                <p class="informational-image-caption">
+                    A chunk of raw amethyst showcasing some of this stone's sought-after deep purple crystals.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/apatite.jpg">
+                <img src="about-images/stones-and-minerals/apatite.jpg">
+                <p class="informational-image-caption">
+                    A few of the several variations of apatite gemstones.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/Beryl.jpg">
+                <img src="about-images/stones-and-minerals/Beryl.jpg">
+                <p class="informational-image-caption">
+                    A perfect example of the cylindrical nature of Beryl.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/blue-sponge-coral.jpg">
+                <img src="about-images/stones-and-minerals/blue-sponge-coral.jpg">
+                <p class="informational-image-caption">
+                    The vivid Blue Sponge coral.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/carnelian.jpg">
+                <img src="about-images/stones-and-minerals/carnelian.jpg">
+                <p class="informational-image-caption">
+                    Reddish-orange carnelian pebbles.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/fluorite.jpg">
+                <img src="about-images/stones-and-minerals/fluorite.jpg">
+                <p class="informational-image-caption">
+                    This piece of fluorite contains a variety of this mineral's possible colors including light green, deep purple, and dark blue.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/Jade2.jpg">
+                <img src="about-images/stones-and-minerals/Jade2.jpg">
+                <p class="informational-image-caption">
+                     Many shades and qualities of Jade pebbles.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/Jasper2.jpg">
+                <img src="about-images/stones-and-minerals/Jasper2.jpg">
+                <p class="informational-image-caption">
+                    Despite its appearance, this opaque Jasper is more closely related to Jade than agate or onyx.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/kyanite2.jpg">
+                <img src="about-images/stones-and-minerals/kyanite2.jpg">
+                <p class="informational-image-caption">
+                    The beautiful blues of this kyanite grouping make it obvious why it was sometimes referred to as Cyan-ite.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/labradorite.jpg">
+                <img src="about-images/stones-and-minerals/labradorite.jpg">
+                <p class="informational-image-caption">
+                    The unique effect created by light refraction off of this mineral is called "Labradorescence".
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/labradorite-closeup.jpg">
+                <img src="about-images/stones-and-minerals/labradorite-closeup.jpg">
+                <p class="informational-image-caption">
+                    The most complex stained-glass window of all time, or a close-up photo of labradorite?
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/petrified-wood-basin.jpg">
+                <img src="about-images/stones-and-minerals/petrified-wood-basin.jpg">
+                <p class="informational-image-caption">
+                    An incredible sink basin made of petrified wood.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/petrified-log.jpg">
+                <img src="about-images/stones-and-minerals/petrified-log.jpg">
+                <p class="informational-image-caption">
+                    An example of the sometimes vivid nature of petrified wood in a prehistoric fallen log in the Badlands.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/pietersite2.jpg">
+                <img src="about-images/stones-and-minerals/pietersite2.jpg">
+                <p class="informational-image-caption">
+                    A pietersite slab showing off its colors.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/pietersite-closeup.jpg">
+                <img src="about-images/stones-and-minerals/pietersite-closeup.jpg">
+                <p class="informational-image-caption">
+                    A close-up of the breathtaking colors and patterns of pietersite.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/pyrite.jpg">
+                <img src="about-images/stones-and-minerals/pyrite.jpg">
+                <p class="informational-image-caption">
+                    Iron pyrite is commonly referred to as "fool's gold" and is very beautiful despite its lack of value next to real gold.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/pyrite2.jpg">
+                <img src="about-images/stones-and-minerals/pyrite2.jpg" alt="(jjharrison89@facebook.com) - Own work. Licensed under CC BY-SA 3.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Pyrite_from_Ampliaci%C3%B3n_a_Victoria_Mine,_Navaj%C3%BAn,_La_Rioja,_Spain_2.jpg#/media/File:Pyrite_from_Ampliaci%C3%B3n_a_Victoria_Mine,_Navaj%C3%BAn,_La_Rioja,_Spain_2.jpg">
+                <p class="informational-image-caption">
+                    "Pyrite from Ampliación a Victoria Mine, Navajún, La Rioja, Spain 2" by JJ Harrison
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/rainbow-obsidian.jpg">
+                <img src="about-images/stones-and-minerals/rainbow-obsidian.jpg">
+                <p class="informational-image-caption">
+                    Uncut and unpolished rainbow obsidian. <br>
+                    As you can see, it doesn't quite resemble stone OR mineral.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/sardonyx.jpg">
+                <img src="about-images/stones-and-minerals/sardonyx.jpg">
+                <p class="informational-image-caption">
+                    Onyx is very similar to agate, but usually with North-South bands, not rings like with agate. Sardonyx gets its name from the fact that its bands are composed completely of Sard.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/smoky-quartz.jpg">
+                <img src="about-images/stones-and-minerals/smoky-quartz.jpg">
+                <p class="informational-image-caption">
+                    A collection of beautiful six-sided smoky quartz crystal points.
+                </p>
+            </a>
+        </li>
+        <li class="informational-image">
+            <a href="about-images/stones-and-minerals/turquoise2.jpg">
+                <img src="about-images/stones-and-minerals/turquoise2.jpg">
+                <p class="informational-image-caption">
+                    The color of turquoise varies from robin's-egg-blue to green, depending on the amount and ratio of iron and copper in its composition.
+                </p>
+            </a>
+        </li>
+    </ul>
+</div>
 </div>
 
 </body>

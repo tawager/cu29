@@ -3,16 +3,73 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Cu29 | About</title>
-<link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Raleway:300,400' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="about_pages.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="CSS/about_pages.css">
+    <link rel="stylesheet" type="text/css" href="CSS/mobile.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="JS/about-pages.js"></script>
 </head>
 <body>
 <header id="about_header">
-    <nav>
-        <a href="index.html">
-            <img src="img/header.png" class="header">
+    <a href="#cd-nav" class="cd-nav-trigger">
+        <span class="cd-nav-icon"></span>
+        <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
+            <circle fill="transparent" stroke="#656e79" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+        </svg>
+    </a>
+    <div id="cd-nav" class="cd-nav">
+        <div class="cd-navigation-wrapper">
+            <div class="cd-half-block">
+                <h2 id="navigation_headline">Navigation</h2>
+
+                <nav class="mobile_navigation">
+                    <ul>
+                        <li>
+                            <h2><a href="GalleryPages/necklaces.html">necklaces</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="GalleryPages/bracelets.html">bracelets</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="GalleryPages/rings.html">rings</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="GalleryPages/earrings.html">earrings</a></h2>
+                        </li>
+                        <li>
+                            <h2><a href="GalleryPages/colorado.html">colorado collection</a></h2>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- .cd-half-block -->
+
+            <div class="cd-half-block">
+                <section id="mobile-contact">
+                    <h3 class="contact">Contact</h3>
+                    <ul class="contact-info">
+                        <li class="phone"><a href="tel:605-212-3204"><h2>605.212.3204</h2></a></li>
+                        <li class="mail"><a href="mailto:cu29creations@gmail.com"><h2>cu29creations@gmail.com</h2></a></li>
+                        <li class="Instagram"><a href="http://instagram.com/cu29creations"><h2>Instagram | @Cu29Creations</h2></a></li>
+                        <li class="facebook"><a href="https://www.facebook.com/Cu29Creations"><h2>Facebook | Cu29 Creations</h2></a></li>
+                    </ul>
+                </section>
+            </div> <!-- .cd-half-block -->
+        </div> <!-- .cd-navigation-wrapper -->
+    </div> <!-- .cd-nav -->
+    <div class="social-media">
+        <a class="social_media" href="http://www.pinterest.com/cu29creations/" target="_blank">
+            <img src="http://www.niftybuttons.com/authentic/color-square/pinterest.png" border="0" margin="1px"  align="left">
         </a>
+        <a class="social_media" href="http://instagram.com/cu29creations" target="_blank">
+            <img src="http://www.niftybuttons.com/authentic/color-square/instagram.png" border="0" margin="1px" align="left">
+        </a>
+        <a class="social_media" href="https://www.facebook.com/Cu29Creations" target="_blank">
+            <img src="http://www.niftybuttons.com/authentic/color-square/facebook.png" align="left" border="0" margin="1px">
+        </a>
+    </div>
+    <a href="index.html"><img id="header" src="images/header.png"></a>
+    <nav class="desktop_navigation">
         <ul>
             <li>
                 <h2><a href="GalleryPages/necklaces.html">necklaces</a></h2>
@@ -31,30 +88,35 @@
             </li>
         </ul>
     </nav>
-    <a class="social_media" href="http://www.pinterest.com/cu29creations/" target="_blank">
-        <img src="http://www.niftybuttons.com/authentic/color-square/pinterest.png" border="0" margin="1px"  align="left">
-    </a>
-    <a class="social_media" href="http://instagram.com/cu29creations" target="_blank">
-        <img src="http://www.niftybuttons.com/authentic/color-square/instagram.png" border="0" margin="1px" align="left">
-    </a>
-    <a class="social_media" href="https://www.facebook.com/Cu29Creations" target="_blank">
-        <img src="http://www.niftybuttons.com/authentic/color-square/facebook.png" align="left" border="0" margin="1px">
-    </a>
 </header>
 
 <div id="logo">
-    <h1>Designs by Stephanie Wager</h1>
+    <h3 class="elements"><a href="theElements.html">Elements by Nature.</a></h3>
+    <h1 class="designs"> Designs by Stephanie Wager.</h1>
 </div>
-<section id="primary"></section>
+<section id="primary">
+    <h1 id="about">About the Artist</h1>
+    <p id="about_paragraph">
+        I started creating jewelry 13 years ago and found my voice when I began experimenting with copper.
+        <br><br>
+        My experiences include working in a bead shop, completing an apprenticeship, obtaining my Accredited Jewelry Professional certificate from GIA and serving as a jewelry consultant at an auction house.
+        <br><br>
+        I strive to make all of my pieces a wearable work of art. They are all one-of-a-kind and up to the standard of this perfectionist!
+    </p>
+    <p class="custom_orders">Custom orders are welcome.</p>
+</section>
+<img class="headshot" alt="headshot of the artist" src="about-images/Steph-cute-headshot.png">
 <section id="secondary">
-    <h3>Contact Details</h3>
+    <h3 class="contact">Contact</h3>
     <ul class="contact-info">
         <li class="phone"><a href="tel:605-212-3204"><h2>605.212.3204</h2></a></li>
         <li class="mail"><a href="mailto:cu29creations@gmail.com"><h2>cu29creations@gmail.com</h2></a></li>
+        <li class="Instagram"><a href="http://instagram.com/cu29creations"><h2>Instagram | @Cu29Creations</h2></a></li>
+        <li class="facebook"><a href="https://www.facebook.com/Cu29Creations"><h2>Facebook | Cu29 Creations</h2></a></li>
     </ul>
 </section>
 <footer>
-    <p id="footer">&copy; 2014 Andy Wager</p>
+    <p id="footer">&copy; 2015 taw</p>
 </footer>
 </body>
 </html>

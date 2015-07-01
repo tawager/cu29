@@ -1209,7 +1209,7 @@ if (typeof Object.create !== "function") {
 
         autoHeight : function () {
             var base = this,
-                $currentimg = $(base.$owlItems[base.currentItem]).find("img"),
+                $currentimg = $(base.$owlItems[base.currentItem]).find("images"),
                 iterations;
 
             function addHeight() {

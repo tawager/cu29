@@ -1,0 +1,384 @@
+/*
+8b    d8    db    88 88b 88
+88b  d88   dPYb   88 88Yb88
+88YbdP88  dP__Yb  88 88 Y88
+88 YY 88 dP""""Yb 88 88  Y8
+*/
+
+body {
+  background: snow;
+}
+h2 {
+   font-family: 'Arvo', serif;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 1em;
+   margin-bottom: 15px;
+ }
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: lightsteelblue;
+  }
+}
+#small-header {
+  width: 550px;
+  height: 93px;
+  position: absolute;
+  top: 30px;
+  border: 2px solid #888;
+  border-radius: 10px;
+}
+#tagLine {
+  font-family: 'PassionSansPDaa-Hairline', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size:  2em;
+  line-height: 64px;
+  margin: 0 20px 5px 27px;
+  float: left;
+}
+#introduction {
+  float: left;
+  margin: 20px 0 0 20px;
+  padding: 0;
+  width: 250px;
+  font-family: 'Arvo', serif;
+  font-size: .85em;
+  line-height: 2em;
+  text-align: center;
+}
+/*
+88b 88    db    Yb    dP     88""Yb    db    88b 88 888888 88
+88Yb88   dPYb    Yb  dP      88__dP   dPYb   88Yb88 88__   88
+88 Y88  dP__Yb    YbdP       88"""   dP__Yb  88 Y88 88""   88  .o
+88  Y8 dP""""Yb    YP        88     dP""""Yb 88  Y8 888888 88ood8
+*/
+div.social-media {
+
+  .social_media {
+    float: right;
+    display: inline-block;
+    position:  relative;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    z-index: 3000;
+  }
+}
+#gallery_header  {
+  margin: 50px 0 50px 25px;
+}
+nav {
+  clear: both;
+  text-align: center;
+  float: right;
+  position: relative;
+  bottom:  -6px;
+  ul {
+    list-style: none;
+    margin: 0 20px 20px;
+    li {
+      display: inline-block;
+      padding: 20px 20px 5px 20px;
+      border-bottom: 2px solid black;
+      a {
+        text-decoration: none;
+        color: black;
+        &.current,
+        &:hover {
+          color: lightsteelblue;
+        }
+      }
+
+    }
+
+  }
+}
+/*
+ dP""b8    db    88     88     888888 88""Yb Yb  dP
+dP   `"   dPYb   88     88     88__   88__dP  YbdP
+Yb  "88  dP__Yb  88  .o 88  .o 88""   88"Yb    8P
+ YboodP dP""""Yb 88ood8 88ood8 888888 88  Yb  dP
+ */
+#wrapper {
+  background: snow;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0;
+  ul.page_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    padding: 10px 1px 1px 1px;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+    background-color: snow;
+    align-content: flex-start;
+    li:nth-child(5n+1):hover {
+      transform: translateX(120px);
+      transition: all .6s ease;
+      z-index: 2001;
+    }
+    li:nth-child(5n+5):hover {
+      transform: translateX(-80px);
+      transition: all .6s ease;
+      z-index: 2001;
+    }
+    li img {
+      height: /*30.289137%*/ 225px;
+      border-radius: 5%;
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, .85);
+      border: 4px solid white;
+      opacity: 0.92;
+      margin: 10px 7.5px 5px;
+      padding: 0;
+      position: relative;
+      z-index: 100;
+      &:hover {
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.75);
+        border: none;
+        transition: all .6s ease;
+        transform: scale(2.2);
+        opacity: 1.0;
+        z-index: 2001;
+      }
+    }
+
+  }
+}
+/*
+.row-2 li:nth-child(3n+1):hover {
+  transform: translateX(150px) translateY(-50px);
+  z-index: 2000;
+}
+.page_gallery.row-2 img:hover {
+  transform: translateY(-100px) scale(2.2);
+  z-index: 2000;
+  transition: all .6s ease;
+}
+
+.row-2,
+.row-3 {
+  justify-content: flex-start;
+  width: 95%;
+}
+*/
+/*
+ dP"Yb  Yb    dP 888888 88""Yb 88        db    Yb  dP
+dP   Yb  Yb  dP  88__   88__dP 88       dPYb    YbdP
+Yb   dP   YbdP   88""   88"Yb  88  .o  dP__Yb    8P
+ YbodP     YP    888888 88  Yb 88ood8 dP""""Yb  dP
+*/
+#overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2001;
+  padding: 25px 10px;
+  text-align: right;
+  img{
+    border-radius: 10px;
+    max-width: 58.5%;
+    max-height: 90%;
+    position: relative;
+    right: 8%;
+  }
+}
+.caption,
+.item_specs,
+.item_price {
+  position: absolute;
+  width: 20%;
+  font-family: 'Arvo', serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: .75em;
+  line-height: 1.9;
+  color: snow;
+  text-align: left;
+}
+.caption {
+  top: 40px;
+  left: 25px;
+  text-indent: each-line;
+  white-space: pre-line;
+  background: white;
+  color: #888;
+  border-radius: 10px;
+  padding: 20px 15px;
+
+}
+.item_specs {
+  top: 55%;
+  left: 40px;
+  font-style: italic;
+}
+.item_price {
+  top: 75%;
+  left: 40px;
+  text-align: left;
+  font-size: .7em;
+  color: lightsteelblue;
+}
+div.make-it-mine,
+p.purchase-link {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+div.purchase_item {
+  top: 85%;
+  left: 40px;
+  font-size: .7em;
+  color: lightsteelblue;
+
+}
+.photo_caption,
+.specs,
+.price {
+  display: none;
+}
+p.photo_caption {
+  font-family: 'Arvo', serif;
+  color: black;
+  background: white;
+  padding: 15px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  position:  fixed;
+  bottom: 200px;
+  left: 45px;
+  white-space: pre-line;
+  font-size: 1em;
+}
+
+/*
+888888 888888 Yb  dP 888888
+  88   88__    YbdP    88
+  88   88""    dPYb    88
+  88   888888 dP  Yb   88
+*/
+@font-face {
+  font-family: 'PassionSansPDae-Book';
+  src: url('/webFonts/passionsanspdae-book.eot');
+  src: url('/webFonts/passionsanspdae-book.eot?#iefix') format('embedded-opentype'),
+  url('/webFonts/passionsanspdae-book.woff') format('woff'),
+  url('/webFonts/passionsanspdae-book.ttf') format('truetype'),
+  url('/webFonts/passionsanspdae-book.svg#PassionSansPDae-Book') format('svg');
+}
+
+@font-face {
+  font-family: 'PassionSansPDaa-Hairline';
+  src: url('/webFonts/passionsanspdaa-hairline.eot');
+  src: url('/webFonts/passionsanspdaa-hairline.eot?#iefix') format('embedded-opentype'),
+  url('/webFonts/passionsanspdaa-hairline.woff') format('woff'),
+  url('/webFonts/passionsanspdaa-hairline.ttf') format('truetype'),
+  url('/webFonts/passionsanspdaa-hairline.svg#PassionSansPDaa-Hairline') format('svg');
+}
+
+/*
+88""Yb 88""Yb 888888    db    88  dP 88""Yb  dP"Yb  88 88b 88 888888 .dP"Y8
+88__dP 88__dP 88__     dPYb   88odP  88__dP dP   Yb 88 88Yb88   88   `Ybo."
+88""Yb 88"Yb  88""    dP__Yb  88"Yb  88"""  Yb   dP 88 88 Y88   88   o.`Y8b
+88oodP 88  Yb 888888 dP""""Yb 88  Yb 88      YbodP  88 88  Y8   88   8bodP'
+*/
+
+@media screen and (max-width: 1484px) {
+
+
+  #small-header {
+    left: 48px;
+  }
+
+  nav {
+    font-size: .9em;
+  }
+  #tagLine {
+    font-size:  1.6em;
+    position: relative;
+    top: 30px;
+    left: 48px;
+    margin: 25px 0;
+  }
+  #wrapper {
+    ul.page_gallery {
+      li:nth-child(5n+1):hover {
+        transform: translateX(0px);
+      }
+      li:nth-child(5n+5):hover {
+        transform: translateX(0px);
+      }
+      li:nth-child(4n+1):hover {
+        transform: translateX(120px);
+        z-index: 2001;
+      }
+      li:nth-child(4n+4):hover {
+        transform: translateX(-80px);
+        z-index: 2001;
+
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  #small-header {
+  }
+  #tagLine {
+    font-size:  1.6em;
+  }
+  #introduction {
+    position: absolute;
+    width: 220px;
+    font-family: 'Arvo', serif;
+    font-size: .8em;
+    line-height: 1.6em;
+    top: 60%;
+    z-index: 1000;
+  }
+  nav {
+    font-size: .8em;
+    position: relative;
+    top: 30px;
+  }
+    .social_media {
+    z-index: 3000;
+  }
+  ul.page_gallery {
+    li img {
+      opacity: 1.0;
+    }
+    li img:hover {
+      -webkit-transform: none;
+      transform: none;
+      transition: scale(0);
+      box-shadow: none;
+      -webkit-transition: none !important;
+      -moz-transition: none !important;
+      -o-transition: none !important;
+      -ms-transition: none !important;
+      transition: none !important;
+    }
+  }
+
+
+
+}
+/*
+
+@media screen and (max-width: 705px) {
+  .page_gallery {
+
+  }
+
+}
+*/

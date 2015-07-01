@@ -1,0 +1,897 @@
+/*
+8b    d8    db    88 88b 88
+88b  d88   dPYb   88 88Yb88
+88YbdP88  dP__Yb  88 88 Y88
+88 YY 88 dP""""Yb 88 88  Y8
+*/
+body {
+  background: snow;
+  h2 {
+    font-family: 'Arvo', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: lightsteelblue;
+    }
+  }
+}
+#header {
+    width: 550px;
+    position: absolute;
+    top: 30px;
+    border: 2px solid #888;
+    border-radius: 10px;
+}
+#logo {
+  font-family: 'PassionSansPDaa-Hairline', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 20px 5px 27px;
+  float: left;
+}
+footer {
+  position: relative;
+  bottom: -20%;
+  p#footer {
+    clear: both;
+    font-family: 'Arvo', serif;
+    font-size: .55em;
+    padding-left: 20px;
+  }
+}
+/*
+88b 88    db    Yb    dP     88""Yb    db    88b 88 888888 88
+88Yb88   dPYb    Yb  dP      88__dP   dPYb   88Yb88 88__   88
+88 Y88  dP__Yb    YbdP       88"""   dP__Yb  88 Y88 88""   88  .o
+88  Y8 dP""""Yb    YP        88     dP""""Yb 88  Y8 888888 88ood8
+*/
+div.social-media {
+
+  .social_media {
+    float: right;
+    display: inline-block;
+    position:  relative;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+    z-index: 3000;
+  }
+}
+#about_header  {
+  margin: 50px 0 50px 25px;
+}
+nav.desktop_navigation {
+  clear: both;
+  text-align: center;
+  float: right;
+  position: relative;
+  bottom:  -6px;
+  ul {
+    list-style: none;
+    margin: 0 20px 20px;
+    li {
+      display: inline-block;
+      padding: 20px 20px 5px 20px;
+      border-bottom: 2px solid black;
+      a {
+        text-decoration: none;
+        color: black;
+        &.current,
+        &:hover {
+          color: lightsteelblue;
+        }
+      }
+
+    }
+
+  }
+}
+/*
+888888 Yb  dP 88""Yb 888888
+  88    YbdP  88__dP 88__
+  88     8P   88"""  88""
+  88    dP    88     888888
+*/
+h1.designs,
+h1.elements {
+  display: inline-block;
+  font-family: 'PassionSansPDaa-Hairline', sans-serif;
+  font-size:  3.3em;
+  line-height: 2;
+  color: lightsteelblue;
+  margin: 15px 0 25px 0;
+}
+h1.elements {
+  margin: 15px 25px 0 0;
+}
+h1.designs {
+  margin: 0 0 0 0;
+}
+h3.designs {
+  margin: 0 0 0 0;
+}
+h3.elements {
+  margin: 50px 25px 0 0;
+}
+h3.designs,
+h3.elements {
+  font-size: 2em;
+  display: inline-block;
+  font-family: 'PassionSansPDaa-Hairline', sans-serif;
+  line-height: 2;
+}
+
+h1.informational-heading {
+  font-family: 'PassionSansPDaa-Hairline', sans-serif;
+  font-variant: small-caps;
+  font-size: 3.2em;
+  letter-spacing: 1px;
+  border-bottom: 1px solid black;
+}
+h3.contact,
+h1#about {
+  font-family: 'PassionSansPDaa-Hairline', sans-serif;
+  font-variant: small-caps;
+}
+h3.contact {
+  font-size: 1.8em;
+  margin: 0 25px 25px 10px;
+}
+h1#about {
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  border-bottom: 1px solid black;
+}
+
+p {
+  font-family: 'Arvo', serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: .85em;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+@font-face {
+  font-family: 'PassionSansPDae-Book';
+  src: url('/webFonts/passionsanspdae-book.eot');
+  src: url('/webFonts/passionsanspdae-book.eot?#iefix') format('embedded-opentype'),
+  url('/webFonts/passionsanspdae-book.woff') format('woff'),
+  url('/webFonts/passionsanspdae-book.ttf') format('truetype'),
+  url('/webFonts/passionsanspdae-book.svg#PassionSansPDae-Book') format('svg');
+}
+@font-face {
+  font-family: 'PassionSansPDaa-Hairline';
+  src: url('/webFonts/passionsanspdaa-hairline.eot');
+  src: url('/webFonts/passionsanspdaa-hairline.eot?#iefix') format('embedded-opentype'),
+  url('/webFonts/passionsanspdaa-hairline.woff') format('woff'),
+  url('/webFonts/passionsanspdaa-hairline.ttf') format('truetype'),
+  url('/webFonts/passionsanspdaa-hairline.svg#PassionSansPDaa-Hairline') format('svg');
+}
+/*
+   db    88""Yb 888888 88 .dP"Y8 888888     88""Yb    db     dP""b8 888888
+  dPYb   88__dP   88   88 `Ybo."   88       88__dP   dPYb   dP   `" 88__
+ dP__Yb  88"Yb    88   88 o.`Y8b   88       88"""   dP__Yb  Yb  "88 88""
+dP""""Yb 88  Yb   88   88 8bodP'   88       88     dP""""Yb  YboodP 888888
+*/
+#primary {
+  clear : both;
+  width: 35%;
+  float: left;
+  padding: 25px;
+}
+.headshot {
+  float: left;
+  margin: 20px;
+  border-radius: 10px;
+  max-height: 400px;
+  position: relative;
+  top: 100px;
+  left: 5%;
+}
+#secondary {
+  width: 27%;
+  max-width: 350px;
+  float: right;
+  position: relative;
+  top: 118px;
+  padding: 25px;
+  margin-right: 3%;
+  border: 2px solid #888;
+  border-radius: 10px;
+  ul.contact-info {
+    list-style: none;
+    padding-left: 25px;
+    li.phone a {
+      background-image: url('../icons/Phone.png');
+    }
+    li.mail a {
+      background-image: url('../icons/Keyboard.png');
+    }
+    li.facebook a {
+      background-image: url("../icons/facebook.gif");
+    }
+    li.Instagram a {
+      background-image: url("../icons/Instagram.png");
+    }
+    a {
+      display: block;
+      color: steelblue;
+      min-height: 20px;
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      padding: 0 0 0 40px;
+      margin: 0 0 30px;
+      position: relative;
+      right: 15px;
+      h2 {
+        font-size:  .95em;
+      }
+    }
+
+  }
+}
+p.custom_orders {
+  clear: both;
+  font-size: 1.3em;
+}
+/*
+888888 88     888888 8b    d8 888888 88b 88 888888     88""Yb    db     dP""b8 888888
+88__   88     88__   88b  d88 88__   88Yb88   88       88__dP   dPYb   dP   `" 88__
+88""   88  .o 88""   88YbdP88 88""   88 Y88   88       88"""   dP__Yb  Yb  "88 88""
+888888 88ood8 888888 88 YY 88 888888 88  Y8   88       88     dP""""Yb  YboodP 888888
+*/
+
+div.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+div.copper-info {
+  clear: both;
+  float: left;
+  max-width: 45%;
+  padding:  25px;
+  border-bottom: 2px solid #888;
+  ul.intro-to-copper {
+    font-family: "Arvo", serif;
+    font-size: 0.8em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li.fact {
+      display: block;
+      line-height: 1.6;
+      background: url("../icons/Atomic.png") no-repeat top left;
+      background-size: 30px;
+      padding: 0 0 10px 65px;
+      margin: 20px 0;
+    }
+  }
+}
+div.copper-images {
+  float: right;
+  max-width: 45%;
+  padding:  50px 25px 25px;
+  a {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    font-family: "Arvo", serif;
+    font-size: 0.75em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    li.informational-image {
+      margin-top: 25px;
+      width: 40%;
+      display: inline;
+      & img {
+        max-width: 225px;
+        margin: 25px 5px 10px;
+      }
+      & p.informational-image-caption {
+        max-width: 90%;
+      }
+
+    }
+    li.informational-image:last-child {
+      position: relative;
+      bottom: 400px;
+    }
+  }
+}
+div.mineral-info  {
+  clear: left;
+  float: left;
+  width: 45%;
+  padding:  25px;
+  border-bottom: 2px solid #888;
+  ul.intro-to-minerals {
+    font-family: "Arvo", serif;
+    font-size: 0.85em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li.fact {
+      display: block;
+      color: steelblue;
+      line-height: 1.6;
+      background: url("../icons/Atomic.png") no-repeat top left;
+      background-size: 30px;
+      padding: 0 0 10px 65px;
+      margin: 20px 0;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      p.mineral-info {
+        color: black;
+      }
+      p.mineral-info:hover {
+        cursor: default;
+        text-decoration: none;
+      }
+      table {
+        border-collapse: separate;
+        span {
+          font-style: italic;
+        }
+        thead {
+          td {
+            font-family: PassionSansPDaa-Hairline, sans-serif;
+            font-size: 1.4em;
+            letter-spacing: 1px;
+            font-variant: small-caps;
+            text-align: center;
+            padding:15px;
+            color:#fff;
+            text-shadow:1px 1px 1px rgb(200, 117,51);
+            border:1px solid rgb(202,130,100);
+            border-bottom: 3px solid rgb(205,153,153);
+            background-color:rgb(205,153,153);
+            background:-webkit-gradient(
+                            linear,
+                            left bottom,
+                            left top,
+                            color-stop(0.02, rgb(200, 117,51)),
+                            color-stop(0.51, rgb(202,130,100)),
+                            color-stop(0.87, rgb(205,153,153))
+            );
+            background: -moz-linear-gradient(
+                            center bottom,
+                            rgb(200, 117,51) 2%,
+                            rgb(202,130,100) 51%,
+                            rgb(205,153,153) 87%
+            );
+            -webkit-border-top-left-radius:5px;
+            -webkit-border-top-right-radius:5px;
+            -moz-border-radius:5px 5px 0px 0px;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+            span {
+              font-size: .6em;
+              font-style: italic;
+            }
+          }
+        }
+        tbody {
+          border-collapse: collapse;
+          color: black;
+          font-size: 1em;
+          td {
+            padding: 10px;
+            border: 2px solid lightsteelblue;
+            -moz-border-radius:2px;
+            -webkit-border-radius:2px;
+            border-radius:2px;
+            text-shadow:1px 1px 1px #fff;
+            p {
+              width: 300px;
+              font-size: .7rem;
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+div.mineral-images {
+  clear: right;
+  float: right;
+  max-width: 45%;
+  padding:  50px 25px 25px;
+  position: relative;
+  bottom: 300px;
+  border-top: 2px solid #888;
+  ul {
+    font-family: "Arvo", serif;
+    font-size: 0.75em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    li.informational-image {
+      margin-top: 25px;
+      width: 40%;
+      display: inline;
+      & img {
+        max-width: 225px;
+        margin: 25px 5px 10px;
+      }
+      & p.informational-image-caption {
+        max-width: 90%;
+      }
+
+    }
+    li.informational-image:last-child {
+      position: static;
+    }
+  }
+}
+/*
+88     88  dP""b8 88  88 888888 88""Yb  dP"Yb  Yb  dP
+88     88 dP   `" 88  88   88   88__dP dP   Yb  YbdP
+88  .o 88 Yb  "88 888888   88   88""Yb Yb   dP  dPYb
+88ood8 88  YboodP 88  88   88   88oodP  YbodP  dP  Yb
+*/
+#overlay {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2001;
+  padding: 5px;
+  text-align: right;
+  img{
+    border-radius: 10px;
+    max-height: 80%;
+    max-width: 60%;
+    margin-top: 5%;
+    position: relative;
+    right: 8%;
+  }
+}
+.caption {
+  position: absolute;
+  width: 275px;
+  font-family: 'Arvo', serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: .75em;
+  line-height: 1.5;
+  color: snow;
+  text-align: left;
+}
+.caption {
+  top: 200px;
+  left: 40px;
+}
+
+.photo_caption {
+  display: none;
+}
+
+/*
+88""Yb 88""Yb 888888    db    88  dP 88""Yb  dP"Yb  88 88b 88 888888 .dP"Y8
+88__dP 88__dP 88__     dPYb   88odP  88__dP dP   Yb 88 88Yb88   88   `Ybo."
+88""Yb 88"Yb  88""    dP__Yb  88"Yb  88"""  Yb   dP 88 88 Y88   88   o.`Y8b
+88oodP 88  Yb 888888 dP""""Yb 88  Yb 88      YbodP  88 88  Y8   88   8bodP'
+*/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (max-width : 1160px) {
+  /* Styles */
+
+  #header {
+    left: 48px;
+  }
+  footer {
+    position: absolute;
+    bottom: -70%;
+    left : 15px;
+  }
+  nav.desktop_navigation {
+    font-size: .825em;
+    bottom: -25px;
+  }
+  #tagLine {
+    font-size: 1.6em;
+    position: relative;
+    top: 30px;
+    left: 48px;
+    margin: 25px 0;
+  }
+  h1.elements {
+    font-size: 2.67em;
+    margin: 15px 25px 0 0;
+  }
+  h1.designs {
+    font-size: 2.67em;
+    margin: 0 0 0 0;
+  }
+  h3.designs {
+    font-size: 1.67em;
+    margin: 0 0 0 0;
+  }
+  h3.elements {
+    font-size: 1.67em;
+    margin: 50px 25px 0 0;
+  }
+  h1.informational-heading {
+    font-size: 2.5em;
+  }
+  div.copper-info {
+    max-width: 40%;
+    padding: 15px;
+    ul.intro-to-copper {
+      font-size: 0.7em;
+      li.fact {
+        line-height: 1.5;
+        background-size: 20px;
+        padding: 0 0 10px 50px;
+      }
+    }
+  }
+
+  div.copper-images {
+    ul {
+      font-size: 0.65em;
+      li.informational-image {
+        margin-top: 25px;
+        width: 40%;
+        & img {
+          max-width: 95%;
+          margin: 25px 5px 10px;
+        }
+        & p.informational-image-caption {
+          display: none;
+        }
+      }
+      li.informational-image:last-child {
+        bottom: 218px;
+      }
+    }
+  }
+  div.mineral-info  {
+    width: 40%;
+    padding:  25px;
+    ul.intro-to-minerals {
+      font-size: 0.85em;
+      li.fact {
+        background-size: 20px;
+        padding: 0 0 10px 65px;
+        margin: 20px 0;
+        thead {
+          td {
+            font-size: 1.4em;
+            padding:15px;
+            color:#fff;
+            span {
+              font-size: .6em;
+            }
+          }
+        }
+        tbody {
+          font-size: 1em;
+          td {
+            padding: 10px;
+            p {
+              width: 300px;
+              font-size: .7rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  div.mineral-images {
+    max-width: 45%;
+    bottom: 37px;
+    ul {
+      font-size: 0.75em;
+      li.informational-image {
+        margin-top: 25px;
+        width: 40%;
+        & img {
+          max-width: 95%;
+          margin: 25px 5px 10px;
+        }
+        & p.informational-image-caption {
+          display: none;
+        }
+      }
+      li.informational-image:last-child {
+        position: static;
+      }
+    }
+  }
+  h3.contact,
+  h1#about {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+
+  h1#about {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: .85em;
+    margin-bottom: 15px;
+  }
+  #primary {
+    width: 32%;
+    padding: 25px;
+  }
+  .headshot {
+    float: left;
+    margin: 20px;
+    max-height: 250px;
+    top: 195px;
+    left: -1%;
+  }
+  #secondary {
+    width: 35%;
+    margin-right: 2%;
+    padding: 25px 0;
+  }
+  ul.contact-info {
+    padding-left: 25px;
+    a {
+      min-height: 20px;
+      font-size: .9em;
+      padding: 0 0 0 40px;
+      margin: 0 0 30px;
+      right: 15px;
+    }
+  }
+  p.custom_orders {
+    clear: both;
+    font-size: 1.1em;
+  }
+  #overlay img {
+    right: 4%;
+  }
+
+
+
+}
+
+
+@media screen and (max-width : 796px) {
+  #header {
+    width: 75%;
+    left: 24%;
+    top: 15px;
+  }
+  div.social-media {
+    position: relative;
+    left: 5%;
+    bottom: 20px;
+  }
+  nav.desktop_navigation {
+    display: none;
+  }
+  #tagLine {
+    position: relative;
+    top: 30px;
+    left: 48px;
+    margin: 25px 0;
+  }
+  h1.elements {
+    font-size: 2.33em;
+    margin: 30px 25px 0 0;
+  }
+  h1.designs {
+    font-size: 2em;
+    margin: 0 0 0 0;
+  }
+  h3.designs {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+  }
+  h3.elements {
+    font-size: 1.5em;
+    margin: 50px 25px 0 0;
+  }
+  #primary {
+    width: 55%;
+    padding: 25px;
+  }
+  .headshot {
+    float: left;
+    margin: 20px;
+    max-width: 22%;
+    max-height: none;
+    top: 80px;
+    left: 0;
+  }
+  #secondary {
+    display: none;
+    ul.contact-info {
+      list-style: none;
+      a {
+        min-height: 20px;
+        font-size: 1em;
+      }
+    }
+  }
+}
+  /*
+8b    d8  dP"Yb  88""Yb 88 88     888888     8b    d8 888888 88b 88 88   88
+88b  d88 dP   Yb 88__dP 88 88     88__       88b  d88 88__   88Yb88 88   88
+88YbdP88 Yb   dP 88""Yb 88 88  .o 88""       88YbdP88 88""   88 Y88 Y8   8P
+88 YY 88  YbodP  88oodP 88 88ood8 888888     88 YY 88 888888 88  Y8 `YbodP'
+*/
+  div.cd-nav {
+    h2#navigation_headline {
+      font-family: 'PassionSansPDaa-Hairline', sans-serif;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      font-size: 1.8em;
+  }
+    div.cd-navigation-wrapper {
+      div.cd-half-block {
+        position: relative;
+        top: 50px;
+        section#mobile-contact {
+          padding: 25px 0;
+          h3.contact {
+            margin: 0;
+            font-size: 1.5em;
+            color: lightsteelblue;
+          }
+
+          ul.contact-info {
+            list-style: none;
+            padding-left:  0;
+            li {
+              margin: 0;
+              font-size: 1.4em;
+              a {
+                padding: 5px 0;
+                margin: 0;
+                right: 0;
+                h2 {
+                  font-size: .75em;
+                  margin-bottom: 0;
+                  color: snow;
+                }
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+}
